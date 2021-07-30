@@ -1,0 +1,41 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": <"the invocation word to ask the skill">, // 
+            "intents": [
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetRemoteDataIntent",
+                    "slots": [
+                        {
+                            "name": "username", //variable to alocate de data "name"
+                            "type": "AMAZON.GB_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "My name is {username}", //this use a variable to alocate de data "name"
+                        "I am {username}",
+                        <"In here you put your question">,
+                        <"In here you put your question">
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
